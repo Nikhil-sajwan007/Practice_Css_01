@@ -27,17 +27,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 100px 50px;
     position: relative;
 
 }
 
-.fa{
 
-    color: white;
-    font-size: 22px;
-}
 
 .close-label{
 
@@ -47,7 +43,7 @@ body {
 .pop-up {
 
     background-color: black;
-    color: white;
+    color:white;
     width: 60%;
     max-width: 450px;
     position: absolute;
@@ -56,6 +52,7 @@ body {
     transform: translate(-50%, -50%);
     padding: 60px;
     display: none;
+   transition: 3s all ease;
 }
 
 #open,#close{
@@ -66,10 +63,11 @@ body {
 
 
 label{
-    background-color: black;
+    /* background-color: black; */
     padding: 15px 20px;
     margin-right: 10px;
-    color: wheat;
+    color: red;
+    cursor: pointer;
 }
 
 #open:checked ~ label.open-label{
@@ -80,6 +78,7 @@ label{
 #open:checked ~label.close-label{
 
     display: block;
+    color: green;
 }
 
 #close:checked ~ label.open-label{
