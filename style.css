@@ -1,0 +1,64 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+}
+
+
+:root {
+
+    --prime: #
+}
+
+
+.parent {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 1px solid red;
+    padding: 100px 50px;
+    position: relative;
+
+}
+
+.pop-up {
+
+    background-color: black;
+    color: white;
+    width: 60%;
+    max-width: 450px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    display: none;
+}
+
+
+
+
+#open:checked ~ div.pop-up {
+
+    display: block;
+
+}
+
+#close:checked ~ div.pop-up{
+
+    display: none;
+}
+
+
