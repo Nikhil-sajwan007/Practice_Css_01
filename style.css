@@ -33,6 +33,17 @@ body {
 
 }
 
+.fa{
+
+    color: white;
+    font-size: 22px;
+}
+
+.close-label{
+
+    display: none;
+}
+
 .pop-up {
 
     background-color: black;
@@ -47,7 +58,34 @@ body {
     display: none;
 }
 
+#open,#close{
 
+    display: none;
+}
+
+
+
+label{
+    background-color: black;
+    padding: 15px 20px;
+    margin-right: 10px;
+    color: wheat;
+}
+
+#open:checked ~ label.open-label{
+
+    display: none;
+}
+
+#open:checked ~label.close-label{
+
+    display: block;
+}
+
+#close:checked ~ label.open-label{
+
+    display: block;
+}
 
 
 #open:checked ~ div.pop-up {

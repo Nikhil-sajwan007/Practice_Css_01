@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
+
+
     <title>Clickable pop up with only vanilla css</title>
 </head>
 <body>
@@ -12,11 +15,10 @@
     <div class="parent">
 
         <input type="checkbox" name="" id="open">
-        <label for="open">Open Pop Up</label>
+        <label for="open" class="open-label"> <i class="fa-solid fa-toggle-off fa-2xl "></i> </label>
+        <label for="open" class="close-label"><i class="fa-solid fa-toggle-on fa-2xl"></i></label>
 
         
-<input type="checkbox" name="" id="close">
-            <label for="close">Close Pop Up</label>
         <div class="pop-up">
 
             
@@ -31,6 +33,6 @@
     </div>
 
    
-    
+    <script src="https://kit.fontawesome.com/8a0ee9b181.js" crossorigin="anonymous"></script>
 </body>
 </html>
