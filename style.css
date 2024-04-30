@@ -55,7 +55,7 @@ body {
    transition: 3s all ease;
 }
 
-#open,#close{
+#open{
 
     display: none;
 }
